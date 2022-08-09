@@ -1,0 +1,26 @@
+{% extends 'base.html'%}
+
+{% block title %}
+Index
+{% endblock %}
+
+{% block content %}
+	<div class="col-6 m-auto mt-5">
+		
+		<div class="row m-auto">
+			<div class="col-3 p-2 m-2 bg-secondary">
+				<a class="text-white" href="{% url 'login' %}">Login</a>
+			</div>
+
+			<div class="col-3 p-2 m-2 bg-secondary">
+				<a class="text-white" href="{% url 'cadastro' %}">Cadastro</a>	
+			</div>
+			
+			
+			
+		</div>
+		
+		
+	</div>
+	
+{% endblock %}

@@ -1,0 +1,30 @@
+
+
+
+{% extends 'base.html'%}
+
+{% block title%}
+Troca senha
+{% endblock %}
+
+{% block content %}
+	<form name="form-login" id="formUsers" method="post" action="/alteracao-de-senha/">
+		<div class="col-6 mt-4 m-auto">
+			{% if msg %}
+				<div class="alert {{ class }}">
+					{{ msg }}
+				</div>
+
+			{% endif %}
+			{% csrf_token %}
+			<label class="form-control mt-4 btn btn-success" >Nova senha</label>
+			<input class="form-control mt-4" type="password" name="password" id="password", placeholder="Senha">
+			<input class="form-control mt-4" type="password" name="password" id="password2", placeholder="repita a senha">
+			<input class="form-control mt-4 btn-primary" type="submit" value="Mudar senha">
+			
+			
+		</div>
+			}
+	</form>
+
+{% endblock%}

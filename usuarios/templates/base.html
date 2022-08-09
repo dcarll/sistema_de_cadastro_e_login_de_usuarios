@@ -1,0 +1,22 @@
+{% load static %}
+{% load bootstrap4 %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>
+		{% block title%}
+		{% endblock %}
+	</title>
+	{% bootstrap_css %}
+	
+		
+</head>
+<body>
+	{% block content %}
+	{% endblock %}
+
+	{% bootstrap_javascript jquery='full' %}
+
+</body>
+</html>
